@@ -32,6 +32,7 @@ hosted chat path in the engine — it produces context, not answers.
 | [khwan-client-python](https://github.com/khwanlabs/khwan-client-python) | Python SDK — `pip install khwan` |
 | [khwan-client-ts](https://github.com/khwanlabs/khwan-client-ts) | TypeScript SDK — `npm i @khwan/client` |
 | [khwan-mcp](https://github.com/khwanlabs/khwan-mcp) | MCP server — `uvx khwan-mcp` |
+| [khwan-crewai](https://github.com/khwanlabs/khwan-crewai) | CrewAI integration — recall/remember/verify as tools |
 | [khwan-chat](https://github.com/khwanlabs/khwan-chat) | A reference chat app built on the loop |
 
 All MIT. The hosted engine is closed; everything that runs on your machine and
@@ -59,6 +60,20 @@ It is weaker than a temporal knowledge graph at tracking an entity whose state
 keeps changing, and it has no point-in-time index. The
 [architecture page](https://docs.khwan.ai/architecture) says which is which,
 including a section on where it is weak.
+
+### Reading this as an agent
+
+The documentation is published as text, not only as HTML — a rendered docs page
+is about 3% prose by weight, and the navigation renders before the content.
+
+```
+https://docs.khwan.ai/llms.txt        index of every page, one line each
+https://docs.khwan.ai/llms-full.txt   all of it in one fetch
+https://docs.khwan.ai/quickstart.md   Markdown source of any page — append .md
+```
+
+Khwan (ขวัญ) is Thai: the essence that inhabits a body without being it. It is
+not the Qwen model family.
 
 ---
 
