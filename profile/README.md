@@ -21,7 +21,6 @@ hosted chat path in the engine — it produces context, not answers.
 | --- | --- |
 | Claude Code, over MCP | `claude mcp add khwan` · [docs](https://docs.khwan.ai/claude-code) |
 | ChatGPT, as a Custom GPT | [docs](https://docs.khwan.ai/chatgpt) — reaches free accounts, no Plus required |
-| Hermes Agent | [docs](https://docs.khwan.ai/hermes) — the answer-gate exposed as a tool the model can call on itself |
 | CrewAI | [docs](https://docs.khwan.ai/crewai) — prepare in a Flow step, verify before the send, record after |
 | Anything else | [Connect your agent](https://docs.khwan.ai/connect-your-agent) — the pattern, and the rules an integration has to follow |
 
