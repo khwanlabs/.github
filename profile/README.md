@@ -1,5 +1,7 @@
 ## Khwan — the memory layer for AI agents
 
+**You should never have to tell it twice.**
+
 Khwan is not a model and does not replace one. It wraps the agent you already run
 and gives it memory that survives the session, rules distilled from the times you
 corrected it, and a gate that can refuse an answer before it ships.
@@ -14,6 +16,11 @@ POST /record    → persist the turn, and learn from it                       (n
 
 **Khwan never runs your model and never holds your provider key.** There is no
 hosted chat path in the engine — it produces context, not answers.
+
+The only inference Khwan ever runs is one nightly pass that distils stored turns
+into standing rules. A real production run: **8 brains, 245 packets → 11 lessons,
+$0.0094.** Memory layers that compress, graph, or consolidate in the background
+pay a model per turn or per episode. The read and write paths here pay nothing.
 
 ### Works with
 
